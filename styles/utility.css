@@ -1,0 +1,9 @@
+.center {
+    width: 1040px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.margin-inline {
+    margin-inline: auto;
+}

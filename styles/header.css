@@ -1,0 +1,144 @@
+header {
+    background-image: url(../assets/images/Background_Intro.png);
+    height: 750px;
+
+    background-size: cover;
+}
+
+#about-me {
+    padding-block: 120px 57px;
+    width: 1040px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #presentation {
+        max-width: 680px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
+
+        text-align: center;
+
+        h1 {
+            margin-block: 8px 20px;
+        }
+        
+        p {
+            color: var(--gray-400);
+        }
+
+        div:first-child {
+            position: relative;
+        }
+
+        img:first-child {
+            width: 112px;
+            height: 112px;
+            
+            aspect-ratio: 1/1;
+            object-fit: cover;
+
+            outline: 2px solid var(--red);
+            border-radius: 999px;
+            padding: 5px;
+        }
+
+        img:last-child {
+            position: absolute;
+
+            right: 0;
+            bottom: 0;
+
+            width: 32px;
+            height: 32px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+
+            z-index: 2;
+        }
+
+        span {
+            color: var(--red);
+        }
+    }
+
+    #tags {
+        margin-block: 80px 94px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    height: 40px;
+
+    background-color: var(--gray-300);
+
+    padding-inline: 16px;
+    padding-block: 8px;
+
+    border-radius: 999px;
+
+    transition: outline 0.06s ease-in;
+
+    svg {
+        height: 24px;
+        width: 24px;
+    }
+
+    img {
+        height: 19px;
+        width: 19px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    p {
+        font: var(--text-md);
+    }
+}
+
+.tag:hover {
+    outline: 2px solid var(--gray-400);
+}
+
+.git-hub-icon-fill {
+    fill: var(--gray-500);
+}
+
+.html-icon-fill {
+    fill: var(--red);
+}
+
+.css-icon-fill {
+    fill: var(--blue);
+}
+
+.js-icon-fill {
+    fill: var(--yellow);
+}
+
+.reactjs-icon-fill {
+    fill: var(--blue);
+}
+
+.nodejs-icon-fill {
+    fill: var(--green);
+}
+
+a:hover:has(.CaretDoubleDown-icon) {
+    .CaretDoubleDown-icon {
+        fill: var(--blue);
+    }
+}
